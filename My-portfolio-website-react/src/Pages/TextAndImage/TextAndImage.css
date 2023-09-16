@@ -1,0 +1,27 @@
+.text__and__image__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.text {
+  width: 40%;
+}
+
+.image img {
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+.clippy {
+  background-color: url("/public/assets/reuben42.png");
+  clip-path: circle(50% at 50% 50%);
+  background-color: rgb(216, 110, 110);
+  width: 300px;
+  height: 300px;
+  z-index: -1;
+  position: absolute;
+  margin-top: -280px;
+}
