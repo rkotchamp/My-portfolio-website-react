@@ -1,0 +1,9 @@
+.projectContainer {
+  width: 50%;
+  height: 200px;
+  background-color: #333;
+}
+.projectIcons img {
+  width: 30px;
+  height: 30px;
+}

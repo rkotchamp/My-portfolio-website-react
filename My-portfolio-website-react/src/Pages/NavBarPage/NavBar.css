@@ -15,4 +15,9 @@
 .unorderedList li {
   margin-right: 30px;
   list-style: none;
+  cursor: pointer;
+}
+
+.unorderedList li:hover {
+  color: rgb(216, 110, 110);
 }

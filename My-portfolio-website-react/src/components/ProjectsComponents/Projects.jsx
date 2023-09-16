@@ -1,3 +1,4 @@
+import reactjs from "../../../public/assets/reactjs(1).svg";
 import "./Project.css";
 
 function Projects() {
@@ -6,7 +7,12 @@ function Projects() {
       <div className="projectContainer">
         <div className="imge__div"></div>
         <div className="content">
-          <h4>Project Name</h4>
+          <div className="projectHeaders">
+            <h4>Project Name</h4>
+            <div className="projectIcons">
+              <img src={reactjs} alt="react" />
+            </div>
+          </div>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
             veritatis repudiandae eligendi expedita inventore eius nobis quam
