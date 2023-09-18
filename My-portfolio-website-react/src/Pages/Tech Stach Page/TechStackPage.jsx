@@ -15,16 +15,22 @@ import "./TechStackPage.css";
 function TechStackPage() {
   return (
     <div className="techStackContainerDiv">
-      <TechStack text="javScript" newSrc={javascript} newAlt="javaScript" />
-      <TechStack text="Node Js" newSrc={nodejs} newAlt="node js" />
-      <TechStack text="Express.js" newSrc={express} newAlt="express" />
-      <TechStack text="MySQL" newSrc={mysql} newAlt="mysql" />
-      <TechStack text="React" newSrc={reactjs} newAlt="react" />
-      <TechStack text="PostMan" newSrc={postman} newAlt="postman" />
-      <TechStack text="Html5" newSrc={html} newAlt="html" />
-      <TechStack text="CSS3" newSrc={css} newAlt="css" />
-      <TechStack text="Figma" newSrc={figma} newAlt="figma" />
-      <TechStack text="Photoshop" newSrc={photoshop} newAlt="figma" />
+      <div className="headerAndLine">
+        <div className="straighLine"></div>
+        <h2>Tech Stack</h2>
+      </div>
+      <div className="stacks">
+        <TechStack text="javScript" newSrc={javascript} newAlt="javaScript" />
+        <TechStack text="Node Js" newSrc={nodejs} newAlt="node js" />
+        <TechStack text="Express.js" newSrc={express} newAlt="express" />
+        <TechStack text="MySQL" newSrc={mysql} newAlt="mysql" />
+        <TechStack text="React" newSrc={reactjs} newAlt="react" />
+        <TechStack text="PostMan" newSrc={postman} newAlt="postman" />
+        <TechStack text="Html5" newSrc={html} newAlt="html" />
+        <TechStack text="CSS3" newSrc={css} newAlt="css" />
+        <TechStack text="Figma" newSrc={figma} newAlt="figma" />
+        <TechStack text="Photoshop" newSrc={photoshop} newAlt="figma" />
+      </div>
     </div>
   );
 }

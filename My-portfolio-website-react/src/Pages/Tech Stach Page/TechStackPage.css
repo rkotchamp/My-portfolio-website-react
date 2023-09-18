@@ -1,9 +1,19 @@
-.techStackContainerDiv {
+.stacks {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 70px;
-  margin-left: 20%;
+
   width: 50%;
   gap: 20px;
+}
+
+.techStackContainerDiv {
+  display: grid;
+  place-items: center;
+  margin-top: 50px;
+}
+.headerAndLine {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }

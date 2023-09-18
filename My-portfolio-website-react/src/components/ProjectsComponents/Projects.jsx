@@ -1,11 +1,13 @@
 import reactjs from "../../../public/assets/reactjs(1).svg";
+
+import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
 import "./Project.css";
 
 function Projects() {
   return (
     <div>
       <div className="projectContainer">
-        <div className="imge__div"></div>
+        <div className="img__div"></div>
         <div className="content">
           <div className="projectHeaders">
             <h4>Project Name</h4>
@@ -14,13 +16,17 @@ function Projects() {
             </div>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-            veritatis repudiandae eligendi expedita inventore eius nobis quam
-            adipisci quaerat. Explicabo?
+            Lorem ipsum dolor sit amen consectetur adipisicing eliz. Amen
+            veritas repudiate exigence expedited invertor pius Mobis quam
+            adiposis quasar. Explicator?
           </p>
           <div className="gitAndSite">
-            <button>Code</button>
-            <button>Live</button>
+            <button className="btn">
+              Code <AiFillGithub />
+            </button>
+            <button className="btn">
+              Live <AiOutlineLink />
+            </button>
           </div>
         </div>
       </div>

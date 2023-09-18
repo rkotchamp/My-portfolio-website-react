@@ -1,9 +1,46 @@
 .projectContainer {
-  width: 50%;
-  height: 200px;
+  width: 600px;
+  height: 250px;
   background-color: #333;
+  display: flex;
+  border-radius: 10px;
+  border: 1px solid #939292;
+
+  place-items: center;
 }
 .projectIcons img {
   width: 30px;
   height: 30px;
+}
+
+.img__div {
+  width: 350px;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+  background-color: rgb(216, 110, 110);
+}
+.projectHeaders {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+.btn {
+  background-color: transparent;
+  color: #fff;
+  width: 80px;
+  height: 30px;
+  border-radius: 7px;
+  border: 1px solid #686868;
+  margin: 0 10px;
+}
+.btn:hover {
+  background-color: rgb(216, 110, 110);
+  border: none;
 }
