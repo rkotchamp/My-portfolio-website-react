@@ -1,0 +1,44 @@
+.contactLine {
+  width: 5px;
+  height: 30px;
+  background-color: rgb(216, 110, 110);
+}
+
+.contactAndLine {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 10px;
+}
+.inputContainers input,
+textarea {
+  width: 400px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+}
+
+.inputContainers input,
+textarea :focus {
+  border: 2px solid rgb(216, 110, 110);
+}
+.form {
+  width: 600px;
+  height: 300px;
+  background-color: rgb(216, 110, 110);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  gap: 500px;
+}

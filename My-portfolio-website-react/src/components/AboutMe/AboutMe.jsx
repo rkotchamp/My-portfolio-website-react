@@ -28,25 +28,26 @@ function AboutMe() {
         to contact me.{" "}
       </p>
       <div className="infoSection">
+        <h1>Personal Information</h1>
         <div className="personalInfo">
-          <p>Name:</p>
-          <p>Reuben Omaano-Tetteh</p>
+          <p className="basicInfoHeaders">Name:</p>
+          <p className="fontChanges">Reuben Omaano-Tetteh</p>
         </div>
         <div className="personalInfo">
-          <p>Age:</p>
-          <p>{age} years old</p>
+          <p className="basicInfoHeaders">Age:</p>
+          <p className="fontChanges">{age} years old</p>
         </div>
         <div className="personalInfo">
-          <p>Location:</p>
-          <p>Brasov, Romania</p>
+          <p className="basicInfoHeaders">Location:</p>
+          <p className="fontChanges">Brasov, Romania</p>
         </div>
         <div className="personalInfo">
-          <p>Languages:</p>
+          <p className="basicInfoHeaders">Languages:</p>
           <div>
-            <p>
+            <p className="fontChanges">
               English <span>Native Speaker</span>
             </p>
-            <p>
+            <p className="fontChanges">
               Romanian <span>B1 Level</span>
             </p>
           </div>
