@@ -1,0 +1,17 @@
+.aboutMeContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.longText {
+  width: 50%;
+  text-align: left;
+  letter-spacing: 0.1em;
+  /* font-weight: lighter; */
+}
+.personalInfo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+}

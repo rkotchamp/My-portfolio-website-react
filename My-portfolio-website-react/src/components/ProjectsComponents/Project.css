@@ -7,6 +7,7 @@
   border: 1px solid #939292;
 
   place-items: center;
+  margin-bottom: 20px;
 }
 .projectIcons img {
   width: 30px;
@@ -37,10 +38,11 @@
   width: 80px;
   height: 30px;
   border-radius: 7px;
-  border: 1px solid #686868;
+  border: 1px solid rgb(216, 110, 110);
   margin: 0 10px;
 }
 .btn:hover {
   background-color: rgb(216, 110, 110);
   border: none;
+  border: 1px solid rgb(216, 110, 110);
 }

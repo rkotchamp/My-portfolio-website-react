@@ -2,5 +2,13 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
-  margin-top: 70px;
+  margin-top: 80px;
+}
+.verticalLine {
+  width: 5px;
+  height: 30px;
+  background-color: rgb(216, 110, 110);
+}
+
+.projects {
 }

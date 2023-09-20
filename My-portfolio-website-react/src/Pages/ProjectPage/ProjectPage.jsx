@@ -6,11 +6,13 @@ function ProjectPage() {
   return (
     <div className="projectPageContainer">
       <div className="headerAndLine">
-        <div className="straighLine"></div>
+        <div className="verticalLine"></div>
         <h2>Projects</h2>
       </div>
-      <Projects />
-      <Projects />
+      <div className="projects">
+        <Projects />
+        <Projects />
+      </div>
     </div>
   );
 }
