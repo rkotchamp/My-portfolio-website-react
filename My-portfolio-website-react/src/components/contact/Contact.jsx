@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 import "./Contact.css";
@@ -10,10 +10,10 @@ function Contact() {
 
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_8mh3iti",
+        "template_50zxe9g",
         form.current,
-        "YOUR_PUBLIC_KEY"
+        "hgfHmT9565tq6OIWE"
       )
       .then(
         (result) => {
@@ -23,6 +23,7 @@ function Contact() {
           console.log(error.text);
         }
       );
+    e.target.reset();
   };
   return (
     <div className="contactContainer">
@@ -33,16 +34,26 @@ function Contact() {
 
       <form ref={form} onSubmit={sendEmail} className="form">
         <div className="inputContainers">
-          <input type="text" name="user_name" placeholder="Name" />
+          <input
+            type="text"
+            name="from_name"
+            placeholder="Full Name"
+            className="inputs"
+          />
         </div>
         <div className="inputContainers">
-          <input type="email" name="user_email" placeholder="E-mail" />
+          <input
+            type="email"
+            name="email"
+            placeholder="E-mail"
+            className="inputs"
+          />
         </div>
         <div className="inputContainers">
-          <textarea name="message" placeholder="Message" />
+          <textarea name="message" placeholder="Message" className="textarea" />
         </div>
         <div className="inputContainers">
-          <input type="submit" value="Send" />
+          <input type="submit" value="Send" className="sendButton" />
         </div>
       </form>
     </div>

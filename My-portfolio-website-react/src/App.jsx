@@ -4,6 +4,7 @@ import ProjectPage from "./Pages/ProjectPage/ProjectPage";
 import TechStackPage from "../src/Pages/Tech Stach Page/TechStackPage";
 import AboutPage from "./Pages/AboutPage/AboutPage";
 import Contact from "./components/contact/Contact";
+import Footer from "./components/Footer/Footer";
 import "./App.css";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <ProjectPage />
       <AboutPage />
       <Contact />
+      <Footer />
     </div>
   );
 }
