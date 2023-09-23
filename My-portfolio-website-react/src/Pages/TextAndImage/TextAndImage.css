@@ -7,6 +7,8 @@
 
 .text {
   width: 40%;
+  animation-name: textSlideIn;
+  animation-duration: 2s;
 }
 .firstHeader span {
   color: rgb(216, 110, 110);
@@ -44,6 +46,8 @@
   z-index: -1;
   /* position: absolute; */
   /* margin-top: 100px; */
+  animation-name: imageSlideIn;
+  animation-duration: 2s;
 }
 .icons {
   display: flex;
@@ -60,4 +64,78 @@
 
 .icons a:hover {
   color: rgb(216, 110, 110);
+}
+
+@keyframes imageSlideIn {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(-100px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes textSlideIn {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(100px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .image img {
+    width: 100px;
+    height: 100px;
+    position: relative;
+  }
+  .clippy {
+    background: url("/public/assets/reuben42.png");
+    clip-path: circle(50% at 50% 50%);
+    background-color: rgb(216, 110, 110);
+    background-size: cover;
+    background-position: center;
+    width: 150px;
+    height: 150px;
+    z-index: -1;
+    /* position: absolute; */
+    /* margin-top: 100px; */
+  }
+
+  .firstHeader {
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+
+  .fullstack h2 {
+    font-size: 10px;
+  }
+  .straighLine {
+    width: 3px;
+    height: 20px;
+    background-color: rgb(216, 110, 110);
+  }
+  .text p {
+    font-size: 10px;
+  }
+  .text {
+    width: 90%;
+  }
+  .text__and__image__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .social_icons {
+    width: 20px;
+    height: 20px;
+  }
 }

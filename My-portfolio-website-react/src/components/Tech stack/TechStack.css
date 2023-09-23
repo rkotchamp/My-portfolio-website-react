@@ -11,3 +11,12 @@
   width: 30px;
   height: 30px;
 }
+
+@media only screen and (max-width: 600px) {
+  .techStackContainer {
+    width: 100px;
+  }
+  .techStackContainer p {
+    font-size: 13px;
+  }
+}

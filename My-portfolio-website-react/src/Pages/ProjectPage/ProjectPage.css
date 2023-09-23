@@ -10,5 +10,10 @@
   background-color: rgb(216, 110, 110);
 }
 
-.projects {
+@media only screen and (max-width: 600px) {
+  .projectPageContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+  }
 }

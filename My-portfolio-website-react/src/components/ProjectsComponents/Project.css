@@ -9,6 +9,10 @@
   place-items: center;
   margin-bottom: 20px;
 }
+.projectAnimate {
+  animation-name: project-animate;
+  animation-duration: 3s;
+}
 .projectIcons img {
   width: 30px;
   height: 30px;
@@ -45,4 +49,53 @@
   background-color: rgb(216, 110, 110);
   border: none;
   border: 1px solid rgb(216, 110, 110);
+}
+@keyframes project-animate {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(0px, 80px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .projectContainer {
+    width: 350px;
+    height: 350px;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid #939292;
+  }
+  .img__div {
+    width: 350px;
+    height: 70%;
+    border-radius: 10px 0 0 10px;
+    background-color: rgb(216, 110, 110);
+    border-radius: 10px 10px 0px 0px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  .btn {
+    background-color: rgb(216, 110, 110);
+    color: #fff;
+    width: 80px;
+    height: 30px;
+    border-radius: 7px;
+
+    margin: 0 10px;
+  }
+  .content p {
+    font-size: 13px;
+    text-align: center;
+  }
 }

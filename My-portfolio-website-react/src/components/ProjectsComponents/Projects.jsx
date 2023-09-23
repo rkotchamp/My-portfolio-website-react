@@ -1,12 +1,17 @@
 import reactjs from "../../../public/assets/reactjs(1).svg";
+import { useInView } from "react-intersection-observer";
 
 import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
 import "./Project.css";
 
 function Projects() {
+  const [ref, inView] = useInView();
   return (
     <div>
-      <div className="projectContainer">
+      <div
+        className={`projectContainer ${inView ? "projectAnimate " : null}`}
+        ref={ref}
+      >
         <div className="img__div"></div>
         <div className="content">
           <div className="projectHeaders">

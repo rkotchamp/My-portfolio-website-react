@@ -6,11 +6,19 @@ function Footer() {
   return (
     <div>
       <footer className="footer">
-        &copy; Reuben Omaano-Tetteh 2023
-        <div>
-          <AiFillGithub />
-          <AiFillLinkedin />
-          <AiFillMail />
+        Reuben Omaano-Tetteh &copy; 2023
+        <div className="footerIcons">
+          <a href="https://github.com/rkotchamp">
+            <AiFillGithub />
+          </a>
+          <a href="https://www.linkedin.com/in/reuben-omaano-tetteh/">
+            {" "}
+            <AiFillLinkedin />
+          </a>
+
+          <a href="mailto:treuben90@yahoo.com">
+            <AiFillMail />
+          </a>
         </div>
       </footer>
     </div>

@@ -1,9 +1,11 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { useInView } from "react-intersection-observer";
 
 import "./Contact.css";
 
 function Contact() {
+  const { ref: contRef, inView: contState } = useInView();
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();

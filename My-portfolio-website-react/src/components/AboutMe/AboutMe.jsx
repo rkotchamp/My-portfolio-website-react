@@ -1,4 +1,5 @@
-import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+
 import "./AboutMe.css";
 
 function AboutMe() {
@@ -9,6 +10,7 @@ function AboutMe() {
     return newAge;
   };
   const age = currentAge();
+  const { ref: myRef, inView: personalInfo } = useInView();
 
   return (
     <div className="aboutMeContainer">
@@ -27,7 +29,10 @@ function AboutMe() {
         rapid growth and the ability to constantly learn, please do not hesitate
         to contact me.{" "}
       </p>
-      <div className="infoSection">
+      <div
+        className={`infoSection ${personalInfo ? "infoAnimate" : null}`}
+        ref={myRef}
+      >
         <h1>Personal Information</h1>
         <div className="personalInfo">
           <p className="basicInfoHeaders">Name:</p>
