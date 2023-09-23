@@ -36,7 +36,7 @@
 }
 
 .clippy {
-  background: url("/public/assets/reuben42.png");
+  background: url("../../assets//My_Tech_logos/reuben42.png");
   clip-path: circle(50% at 50% 50%);
   background-color: rgb(216, 110, 110);
   background-size: cover;
@@ -96,7 +96,7 @@
     position: relative;
   }
   .clippy {
-    background: url("/public/assets/reuben42.png");
+    background: url("../../assets//My_Tech_logos/reuben42.png");
     clip-path: circle(50% at 50% 50%);
     background-color: rgb(216, 110, 110);
     background-size: cover;

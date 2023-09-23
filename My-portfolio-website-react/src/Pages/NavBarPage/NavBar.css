@@ -27,3 +27,7 @@
 .rotate {
   transform: rotate(180deg);
 }
+ul a {
+  color: #fff;
+  text-decoration: none;
+}

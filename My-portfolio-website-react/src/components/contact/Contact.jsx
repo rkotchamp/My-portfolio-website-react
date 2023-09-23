@@ -28,7 +28,7 @@ function Contact() {
     e.target.reset();
   };
   return (
-    <div className="contactContainer">
+    <div className="contactContainer" id="contacts">
       <div className="contactAndLine">
         <div className="contactLine"></div>
         <h2>Contact</h2>

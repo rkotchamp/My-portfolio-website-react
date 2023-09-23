@@ -1,13 +1,15 @@
-import javascript from "../../../public/assets/js(1).svg";
-import nodejs from "../../../public/assets/nodejs(1).svg";
-import express from "../../../public/assets/BASE(1).svg";
-import postman from "../../../public/assets/postman(1).svg";
-import html from "../../../public/assets/html5(1).svg";
-import css from "../../../public/assets/css3(1).svg";
-import reactjs from "../../../public/assets/reactjs(1).svg";
-import figma from "../../../public/assets/figma(1).svg";
-import photoshop from "../../../public/assets/ps(1).svg";
-import mysql from "../../../public/assets/mysql(1).svg";
+import javascript from "../../assets/My_Tech_logos/Group 68.png";
+import nodejs from "../../assets/My_Tech_logos/node.png";
+import express from "../../assets/My_Tech_logos/express.png";
+import postman from "../../assets/My_Tech_logos/postman.png";
+import html from "../../assets/My_Tech_logos/html5.png";
+import css from "../../assets/My_Tech_logos/css.png";
+import reactLogo from "../../assets/My_Tech_logos/Group 70.png";
+import figma from "../../assets/My_Tech_logos/figma.png";
+import photoshop from "../../assets/My_Tech_logos/ps.png";
+import mysql from "../../assets/My_Tech_logos/Vector.png";
+import git from "../../assets/My_Tech_logos/git.png";
+import fireBase from "../../assets/My_Tech_logos/Firebase.png";
 
 import TechStack from "../../components/Tech stack/TechStack";
 import "./TechStackPage.css";
@@ -24,12 +26,14 @@ function TechStackPage() {
         <TechStack text="Node Js" newSrc={nodejs} newAlt="node js" />
         <TechStack text="Express.js" newSrc={express} newAlt="express" />
         <TechStack text="MySQL" newSrc={mysql} newAlt="mysql" />
-        <TechStack text="React" newSrc={reactjs} newAlt="react" />
+        <TechStack text="React" newSrc={reactLogo} newAlt="react" />
         <TechStack text="PostMan" newSrc={postman} newAlt="postman" />
         <TechStack text="Html5" newSrc={html} newAlt="html" />
         <TechStack text="CSS3" newSrc={css} newAlt="css" />
         <TechStack text="Figma" newSrc={figma} newAlt="figma" />
         <TechStack text="Photoshop" newSrc={photoshop} newAlt="figma" />
+        <TechStack text="Git" newSrc={git} newAlt="Git" />
+        <TechStack text="fireBase" newSrc={fireBase} newAlt="fireBase" />
       </div>
     </div>
   );

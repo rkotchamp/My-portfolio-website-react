@@ -1,6 +1,7 @@
 import { AiOutlineMenu } from "react-icons/ai";
-import "./NavBar.css";
 import { useState } from "react";
+import { HashLink as Link } from "react-router-hash-link";
+import "./NavBar.css";
 
 function NavBar() {
   const [bars, setBars] = useState(false);
@@ -16,10 +17,18 @@ function NavBar() {
         </div>
         <nav>
           <ul className={`unorderedList ${bars ? "notShow" : null}`}>
-            <li>Home </li>
-            <li>Projects</li>
-            <li>Articles</li>
-            <li>Contacts </li>
+            <Link to="#home">
+              <li>Home </li>
+            </Link>
+            <Link to="#projects">
+              <li>Projects</li>
+            </Link>
+            <Link to="#contacts">
+              <li>Contacts</li>
+            </Link>
+            <Link to="#about">
+              <li>About me</li>
+            </Link>
           </ul>
         </nav>
         <div className="burger">

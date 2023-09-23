@@ -1,11 +1,11 @@
-import myImage from "../../../public/assets/reuben42.png";
+import myImage from "../../assets/My_Tech_logos/reuben42.png";
 import "./TextAndImage.css";
 import { AiFillGithub, AiFillLinkedin, AiFillMail } from "react-icons/ai";
 
 function TextAndImage() {
   return (
     <div>
-      <div className="text__and__image__container">
+      <div className="text__and__image__container" id="home">
         <div className="text">
           <div className="headers">
             <h1 className="firstHeader">

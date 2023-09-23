@@ -1,10 +1,10 @@
-import reactjs from "../../../public/assets/reactjs(1).svg";
+import reactLogo from "../../assets/My_Tech_logos/Group 70.png";
 import { useInView } from "react-intersection-observer";
 
 import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
 import "./Project.css";
 
-function Projects() {
+function Projects({ projectName, story, imgSrc, projectOverview }) {
   const [ref, inView] = useInView();
   return (
     <div>
@@ -12,19 +12,17 @@ function Projects() {
         className={`projectContainer ${inView ? "projectAnimate " : null}`}
         ref={ref}
       >
-        <div className="img__div"></div>
+        <div className="img__div">
+          <img src={projectOverview} alt="" />
+        </div>
         <div className="content">
           <div className="projectHeaders">
-            <h4>Project Name</h4>
+            <h4>{projectName}</h4>
             <div className="projectIcons">
-              <img src={reactjs} alt="react" />
+              <img src={imgSrc} alt="react" />
             </div>
           </div>
-          <p>
-            Lorem ipsum dolor sit amen consectetur adipisicing eliz. Amen
-            veritas repudiate exigence expedited invertor pius Mobis quam
-            adiposis quasar. Explicator?
-          </p>
+          <p>{story}</p>
           <div className="gitAndSite">
             <button className="btn">
               Code <AiFillGithub />
