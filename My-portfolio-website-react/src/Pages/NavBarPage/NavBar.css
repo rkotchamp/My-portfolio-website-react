@@ -24,10 +24,52 @@
 .notShow {
   display: none;
 }
-.rotate {
+.rotateBars {
   transform: rotate(180deg);
+  display: none;
 }
 ul a {
   color: #fff;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .rotateBars {
+    transform: rotate(180deg);
+    display: block;
+  }
+  .unorderedList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: rgb(216, 110, 110);
+    padding: 30px;
+    animation-name: slideInFromNav;
+    animation-duration: 2s;
+  }
+  .logo {
+    display: none;
+  }
+  .nav__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+    padding: 10px 50px 0px 0px;
+  }
+
+  @keyframes slideInFromNav {
+    0% {
+      transform: translate(0px, 0px);
+    }
+    50% {
+      transform: translate(100px, 0px);
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
 }

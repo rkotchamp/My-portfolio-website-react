@@ -1,13 +1,15 @@
-import { AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import "./NavBar.css";
 
 function NavBar() {
-  const [bars, setBars] = useState(false);
+  const [bars, setBars] = useState(true);
+  const [navDisplay, setNavDisplay] = useState(false);
 
   const toggleClick = () => {
     setBars(!bars);
+    setNavDisplay(!navDisplay);
   };
   return (
     <div>
@@ -15,27 +17,31 @@ function NavBar() {
         <div className="logo">
           Rkot<span>.</span>
         </div>
+
         <nav>
-          <ul className={`unorderedList ${bars ? "notShow" : null}`}>
-            <Link to="#home">
-              <li>Home </li>
-            </Link>
-            <Link to="#projects">
-              <li>Projects</li>
-            </Link>
-            <Link to="#contacts">
-              <li>Contacts</li>
-            </Link>
-            <Link to="#about">
-              <li>About me</li>
-            </Link>
-          </ul>
+          {navDisplay ? (
+            <ul className="unorderedList ">
+              <Link to="#home">
+                <li>Home </li>
+              </Link>
+              <Link to="#projects">
+                <li>Projects</li>
+              </Link>
+              <Link to="#contacts">
+                <li>Contacts</li>
+              </Link>
+              <Link to="#about">
+                <li>About me</li>
+              </Link>
+            </ul>
+          ) : null}
         </nav>
         <div className="burger">
-          <AiOutlineMenu
-            onClick={toggleClick}
-            className={bars ? "rotate" : null}
-          />
+          {bars ? (
+            <AiOutlineMenu onClick={toggleClick} className="rotateBars" />
+          ) : (
+            <AiOutlineClose onClick={toggleClick} className="rotateBars" />
+          )}
         </div>
       </div>
     </div>
