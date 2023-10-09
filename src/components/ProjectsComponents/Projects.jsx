@@ -14,6 +14,9 @@ function Projects({
   imgSrc2,
   imgSrc3,
   imgSrc4,
+  imgSrc5,
+  imgSrc6,
+  imgSrc7,
 }) {
   const [ref, inView] = useInView();
   return (
@@ -33,6 +36,9 @@ function Projects({
               <img src={imgSrc2} alt="css" />
               <img src={imgSrc3} alt="JavaScript" />
               <img src={imgSrc4} alt="react.js" />
+              <img src={imgSrc5} alt="" />
+              <img src={imgSrc6} alt="" />
+              <img src={imgSrc7} alt="" />
             </div>
           </div>
           <p>{story}</p>
