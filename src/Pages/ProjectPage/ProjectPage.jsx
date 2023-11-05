@@ -7,7 +7,7 @@ import jsFile from "../../assets/My_Tech_logos/Group 68.png";
 import nodeJs from "../../assets/My_Tech_logos/node.png";
 import fireBasePng from "../../assets/My_Tech_logos/Firebase.png";
 import mySQLPng from "../../assets/My_Tech_logos/Vector.png";
-import Lambda from "../../assets/My_Tech_logos/lambdaImage.png";
+import Lambda from "../../assets/My_Tech_logos/lambdaMain.png";
 
 import "./ProjectPage.css";
 

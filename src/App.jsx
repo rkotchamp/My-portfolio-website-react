@@ -10,7 +10,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div>
+    <div className="mainAppContainer">
       <NavBar />
       <TextAndImage />
       <TechStackPage />

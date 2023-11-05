@@ -12,7 +12,7 @@ function NavBar() {
     setNavDisplay(!navDisplay);
   };
   return (
-    <div>
+    <div className="navMainContainer">
       <div className="nav__container">
         <div className="logo">
           Rkot<span>.</span>

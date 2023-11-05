@@ -32,13 +32,13 @@ function Projects({
           <div className="projectHeaders">
             <h4>{projectName}</h4>
             <div className="projectIcons">
-              <img src={imgSrc1} alt="html" />
-              <img src={imgSrc2} alt="css" />
-              <img src={imgSrc3} alt="JavaScript" />
-              <img src={imgSrc4} alt="react.js" />
-              <img src={imgSrc5} alt="" />
-              <img src={imgSrc6} alt="" />
-              <img src={imgSrc7} alt="" />
+              <img src={imgSrc1 ? imgSrc1 : null} alt="html" />
+              <img src={imgSrc2 ? imgSrc2 : null} alt="css" />
+              <img src={imgSrc3 ? imgSrc3 : null} alt="JavaScript" />
+              <img src={imgSrc4 ? imgSrc4 : null} alt="react.js" />
+              <img src={imgSrc5 ? imgSrc5 : null} alt="" />
+              <img src={imgSrc6 ? imgSrc6 : null} alt="" />
+              <img src={imgSrc7 ? imgSrc7 : null} alt="" />
             </div>
           </div>
           <p>{story}</p>
