@@ -30,6 +30,7 @@ function ProjectPage() {
           imgSrc5={nodeJs}
           imgSrc6={fireBasePng}
           imgSrc7={mySQLPng}
+          goGitHub="https://github.com/Lambda-travel/lambda_frontend"
         />
         <Projects
           story="There are so many trees being fell down for manufacturing books and even shelves to store books. Upon realisation we decided to create this online library where books can be read and also rented all reducing deforestation and improving our ecosystem at large"
