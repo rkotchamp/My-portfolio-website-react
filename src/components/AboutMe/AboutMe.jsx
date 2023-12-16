@@ -1,4 +1,5 @@
 import { useInView } from "react-intersection-observer";
+import { Link } from "react-router-dom";
 
 import "./AboutMe.css";
 
@@ -22,8 +23,8 @@ function AboutMe() {
         <span>
           <Link to="https://hair-bay.vercel.app/">my latest project</Link>
         </span>
-        , which will aim at helping users for choose and selecting their
-        preferred hair stylist. <br />
+        , which will aim at helping users to choose and select their preferred
+        hair stylist. <br />
         Can I do everything ? Far from it. But I have more than 7 years of
         experience working as a graphic designer and if you are looking for an
         addition to your team with the potential for rapid growth and the

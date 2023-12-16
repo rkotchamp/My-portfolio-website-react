@@ -9,6 +9,10 @@
   letter-spacing: 0.1em;
   line-height: 3ch;
 }
+.longText span a {
+  color: rgb(216, 110, 110);
+  text-decoration: none;
+}
 .personalInfo {
   display: flex;
   justify-content: flex-start;
