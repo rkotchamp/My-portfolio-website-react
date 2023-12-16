@@ -8,6 +8,7 @@ import nodeJs from "../../assets/My_Tech_logos/node.png";
 import fireBasePng from "../../assets/My_Tech_logos/Firebase.png";
 import mySQLPng from "../../assets/My_Tech_logos/Vector.png";
 import Lambda from "../../assets/My_Tech_logos/lambdaMain.png";
+import hairBay from "../../../src/assets/My_Tech_logos/Landing Pagefinal.png";
 
 import "./ProjectPage.css";
 
@@ -19,6 +20,17 @@ function ProjectPage() {
         <h2>Projects</h2>
       </div>
       <div className="projects">
+        <Projects
+          projectName="Lambda Travels"
+          projectOverview={hairBay}
+          story="HairBay is a hair styling platform where users can book their favorite hair stylist."
+          imgSrc1={htmlfile}
+          imgSrc2={cssFile}
+          imgSrc3={jsFile}
+          imgSrc4={reactJs}
+          goGitHub="https://github.com/rkotchamp/HairBay-project"
+          liveSite="https://hair-bay.vercel.app/"
+        />
         <Projects
           projectName="Lambda Travels"
           projectOverview={Lambda}
