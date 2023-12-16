@@ -22,14 +22,12 @@ function AboutMe() {
         <span>
           <Link to="https://hair-bay.vercel.app/">my latest project</Link>
         </span>
-        , which will aim at helping regimental institution work and share
-        confidential information pertaining to their line of work making it
-        difficult for the civilian(general public) access. <br />
+        , which will aim at helping users for choose and selecting their
+        preferred hair stylist. <br />
         Can I do everything ? Far from it. But I have more than 7 years of
-        experience working as a SWAT Officer and graphic design freelance and if
-        you are looking for an addition to your team with the potential for
-        rapid growth and the ability to constantly learn, please do not hesitate
-        to contact me.{" "}
+        experience working as a graphic designer and if you are looking for an
+        addition to your team with the potential for rapid growth and the
+        ability to constantly learn, please do not hesitate to contact me.
       </p>
       <div
         className={`infoSection ${personalInfo ? "infoAnimate" : null}`}
