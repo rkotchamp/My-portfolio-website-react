@@ -32,7 +32,13 @@ ul a {
   color: #fff;
   text-decoration: none;
 }
-
+.logo a {
+  color: #fff;
+  text-decoration: none;
+}
+.logo span {
+  color: rgb(216, 110, 110);
+}
 @media only screen and (max-width: 600px) {
   .rotateBars {
     transform: rotate(180deg);
@@ -53,6 +59,7 @@ ul a {
   .logo {
     display: none;
   }
+
   .nav__container {
     display: flex;
     justify-content: space-evenly;

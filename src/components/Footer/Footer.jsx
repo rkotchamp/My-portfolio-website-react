@@ -16,7 +16,7 @@ function Footer() {
             <AiFillLinkedin />
           </a>
 
-          <a href="mailto:treuben90@yahoo.com">
+          <a href="mailto:reubenomaano.tetteh@gmail.com">
             <AiFillMail />
           </a>
         </div>

@@ -15,23 +15,28 @@ function NavBar() {
     <div className="navMainContainer">
       <div className="nav__container">
         <div className="logo">
-          Rkot<span>.</span>
+          <Link to="/">
+            Rkot<span>.</span>
+          </Link>
         </div>
 
         <nav>
           {navDisplay ? (
             <ul className="unorderedList ">
-              <Link to="#home">
+              <Link smooth to="#home">
                 <li>Home </li>
               </Link>
-              <Link to="#projects">
+              <Link smooth to="#projects">
                 <li>Projects</li>
               </Link>
-              <Link to="#contacts">
+              <Link smooth to="#contacts">
                 <li>Contacts</li>
               </Link>
-              <Link to="#about">
+              <Link smooth to="#about">
                 <li>About me</li>
+              </Link>
+              <Link to="/blog">
+                <li>Blog</li>
               </Link>
             </ul>
           ) : null}
