@@ -17,8 +17,8 @@ function BlogPage() {
   const [getBlog, setGetBlog] = useState([]);
 
   const client = createClient({
-    space: "2kie8sox65km",
-    accessToken: "neX1QozqUXvZYor7sTu7ByQmB5xX9bDxweVW1AXxec0",
+    space: import.meta.env.VITE_VITE_CONTENTFUL_SPACEID_KEY,
+    accessToken: import.meta.env.VITE_CONTENTFUL_ACCESSTOKEN_KEY,
   });
 
   const getKeyedContent = async (key) => {
